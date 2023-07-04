@@ -1,0 +1,5 @@
+#div1{background-color: aqua;}
+#div2{background-color: chartreuse;}
+#div3{background-color: lightcoral;}
+#ResultadoDiv{border: 1px dashed blue;}
+#div1, #div2, #div3 {padding: 10px;}

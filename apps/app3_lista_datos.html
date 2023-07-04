@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<!--
+	<link href="lab02/css/estilosApp.css" rel="stylesheet">
+	<script src="lab02/js/funcionesApp3.js"></script>
+	<script src="lab02/js/arrayAlumnos.js"></script>
+-->
+</head>
+<body>
+<div id="content">
+	<form action="apps/pag_validada.php" method="post" >
+	<table>
+		<tr>
+			<th colspan="2" class="titulo">Aplicación 3 - Lista con datos del estudiante</th>
+		</tr>
+		<tr>
+			<td id="tdIzq">Seleccione Turno:</td>
+			<td id="tdDer">
+				<select name="lstTurno" id="lstTurno" required>
+					<option value="">Seleccione...</option>
+					<option value="M">Turno día</option>
+					<option value="N">Turno noche</option>
+					<option value="T">Tarde</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td id="tdIzq">Seleccione Género:</td>
+			<td id="tdDer">
+				<select name="lstGenero" id="lstGenero" required>
+					<option value="">Seleccione...</option>
+					<option value="M">Masculino</option>
+					<option value="F">Femenino</option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<th colspan="2">
+				<button class="boton" type="button"  name="btnVer" 
+				onclick="verTablaDatos(document.getElementById('lstTurno').value, document.getElementById('lstGenero').value, alumnos)">
+					Ver resultado
+				</button>
+			</th>
+		</tr>
+
+		<tr>
+			<td colspan="2"><div name="marco" id="marco">Resultado aqui...</div></td>
+		</tr>
+		
+		<tr>
+			<th colspan="2">
+				<button class="boton" type="reset"  name="btnVer" onclick="borrarMarco();">
+					Borrar...
+				</button>
+			</th>
+		</tr>
+		
+	</table>
+	</form>
+</div>
+</body>
+</html>

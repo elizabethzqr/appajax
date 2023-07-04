@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+<!--
+	<link href="lab02/css/estilosApp.css" rel="stylesheet">
+	<script src="lab02/js/funcionesApp2.js"></script>
+	<script src="lab02/js/arrayAlumnos.js"></script>
+-->
+</head>
+<body> 
+<div id="content">
+	<form method="post">
+	<table>
+		<tr>
+			<th colspan="2" class="titulo">Aplicación 2 - Conteo por GÉNERO</th>
+		</tr>
+		<tr>
+			<td id="tdIzq">Seleccione género:</td>
+			<td id="tdDer">
+				<select name="lstGenero" id="lstGenero" onchange="verConteoGenero(this.value, alumnos)">
+					<option value="">Seleccione...</option>
+					<option value="M"> Masculino </option>
+					<option value="F"> Femenino </option>
+				</select>
+			</td>
+		</tr>
+
+		<tr>
+			<td id="tdIzq"><div name="marco" id="marco">Resultado aqui...</div></td>
+			<td id="tdDer">
+				<div id="marco2">
+					<input type="text" name="txtResult" id="txtResult" value="">
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<th colspan="2">
+				<button class="boton" type="button"  name="btnVer" onclick="fnValidarApp2yPasar()">
+					Pasar resultado aqui...
+				</button>
+			</th>
+		</tr>
+
+		<tr>
+			<th colspan="2">
+				<button class="boton" type="button"  name="btnVer" onclick="ver2('lstGenero','div','marco1','apps/pag_validada.php');">
+					Enviar datos a servidor y ver resultado aqui...
+				</button>
+			</th>
+		</tr>
+		
+	</table>
+	</form>
+</div>
+</body>
+</html>

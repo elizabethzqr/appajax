@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<!--
+	<link href="lab02/css/estilosApp.css" rel="stylesheet">
+	<script src="lab02/js/funcionesApp3.js"></script>
+	<script src="lab02/js/arrayAlumnos.js"></script>
+-->
+</head>
+<body>
+<div id="content">
+	<form action="apps/pag_validada.php" method="post" >
+	<table>
+		<tr>
+			<th colspan="2" class="titulo">Aplicación 1 - Conteo por TURNO</th>
+		</tr>
+		<tr>
+			<td id="tdIzq">Seleccione turno:</td>
+			<td id="tdDer">
+				<select name="lstTurno" id="lstTurno" onchange="verConteoTurno(this.value, alumnos)" required>
+					<option value="">Seleccione...</option>
+					<option value="M">Turno día</option>
+					<option value="N">Turno noche</option>
+					<option value="T">Tarde</option>
+				</select>
+			</td> 
+		</tr>
+
+		<tr>
+			<td id="tdIzq"><div name="marco" id="marco">Resultado aqui...</div></td>
+			<td id="tdDer">
+				<div id="marco2">
+					<input type="text" name="txtResult" id="txtResult" value="">
+				</div>
+			</td>
+		</tr>
+		
+		<th colspan="2">
+			<button class="boton" type="submit" name="btnVer">
+				Enviar datos a servidor y ver resultado en otra página...
+			</button>
+		</th>
+		
+	</table>
+	</form>
+</div>
+</body>
+</html>

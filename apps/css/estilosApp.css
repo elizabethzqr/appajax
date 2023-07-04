@@ -1,0 +1,26 @@
+*{margin: 0 auto; padding: 0; border: 0px;}
+
+#content{background-color: #f0f0f0; padding-top: 25px; padding-bottom: 25px; margin-top: 20px; font-size: 20px;}
+.titulo{background-color: #212529; height: 45px; padding: 10px;}
+.subTitulo{background-color: #3d444c; min-height: 35px;}
+.boton{background-color: #0d6efd; width: 100%; color: white; border-radius: 5px; height: 35px; margin-top: 1px;}
+.titulo, .subTitulo{color: white; font-size: 30px;}
+select{height: 30px; color: grey;}
+input, #tdIzq, #tdDer {height: 25px;}
+input{background: transparent;}
+
+table{padding: 0px; width: 96%; background-color: white; margin-top: 5px;}
+#marco .cab{background-color: grey; min-height: 35px;}
+#marco td{border: 1px solid grey; padding: 1px;}
+#marco th{border-right: 1px solid grey; padding: 1px;}
+
+#tdIzq{background-color: #c7c7c7; border-bottom: 1px solid #e9e7e7; text-align: right; }
+#tdDer{background-color: #e9e7e7; border-bottom: 1px solid #c7c7c7; }
+#tdIzq, #tdDer{width: 50%; padding: 5px;}
+
+img{width: 120px;}
+#msj{background-color: gray; color: azure; margin-top: 10px; width: 96%; padding: 5px;}
+
+/* Sobreponer mouse */
+.boton:hover{background-color: #0060ed; width: 100%; font-weight: bold;}
+select:hover{width: 75%; font-weight: bold;}
